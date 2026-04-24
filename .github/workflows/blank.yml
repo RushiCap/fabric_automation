@@ -28,4 +28,15 @@ jobs:
           sudo apt update
           sudo apt install -y curl
           curl --version
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: python version
+        run: python --version
+      - name: Pandas install and version test
+        run: |
+              pip install pandas
+              pandas --version
               
+  
