@@ -11,7 +11,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -34,9 +33,9 @@ jobs:
     steps:
       - name: python version
         run: python --version
-      - name: Pandas install and version test
+      - name: Ansible install and version test
         run: |
-              pip install pandas
-              pandas --version
+              pip install ansible
+              ansible --version
               
   
